@@ -1,0 +1,196 @@
+body {
+  background-image: linear-gradient(hsl(278, 94%, 30%), hsl(249, 99%, 64%));
+  margin: 0;
+  height: 100vh;
+
+  font-family: 'Outfit', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 328px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileHeaderTransparent {
+  height: 109px;
+}
+
+.headerImage {
+  position: relative;
+  width: 240px;
+  top: -110px;
+  margin-left: 47px;
+}
+
+.headerImageShadow {
+  position: relative;
+  width: 240px;
+  top: 109px;
+  margin-left: 47px;
+}
+
+.spacer {
+  height: 139px;
+}
+
+.faqBody {
+  background-color: #fff;
+  border-radius: 25px;
+  padding-bottom: 48px;
+}
+
+.faqHolder {
+  margin: 0 25px;
+}
+
+.faqh1 {
+  text-align: center;
+}
+
+.answer {
+  height: 0;
+  overflow: hidden;
+  color: hsl(240, 6%, 50%);
+  font-size: 14px;
+  /* animation: expand 1s forwards; */
+  animation-play-state: paused;
+  animation-name: expand;
+  animation-duration: 1s;
+}
+
+.questionLine {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questionLine:hover .question {
+  color: hsl(14, 88%, 65%);
+  cursor: pointer;
+}
+
+.question {
+  color: hsl(237, 12%, 33%);
+  line-height: 50px;
+  font-size: 14px;
+}
+
+.arrowIcon {
+  margin: auto 0;
+  animation-play-state: paused;
+  animation-name: rotate;
+  animation-duration: 1s;
+}
+
+.desktopFaqGraphics {
+  display: none;
+  width: 500px;
+}
+
+.desktopBackgroundGraphic {
+  position: absolute;
+}
+
+.desktopSpacerTransparent {
+  display: none;
+}
+
+hr {
+  margin: 0;
+  height: 1px;
+  border: none;
+  background-color: hsl(240, 6%, 50%);
+}
+
+h1 {
+  margin: 0 0 20px 0;
+}
+@keyframes expand {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 75px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-180deg);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row;
+    width: 965px;
+    min-height: 510px;
+  }
+
+  .spacer {
+    height: 72px;
+  }
+
+  .mobileHeaderTransparent {
+    display: none;
+  }
+
+  .faqBody {
+    margin-left: auto;
+    margin-right: 0;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
+
+    padding-bottom: 0;
+  }
+
+  .desktopFaqGraphics {
+    display: block;
+    height: 510px;
+    width: 450px;
+  }
+
+  .desktopImage {
+    position: relative;
+    top: -868px;
+    left: -80px;
+  }
+
+  .desktopBackgroundGraphic {
+    position: relative;
+    left: -573px;
+    top: -290px;
+  }
+
+  .desktopSpacerTransparent {
+    width: 45px;
+    display: block;
+  }
+  .faqHolder {
+    margin: 0 90px 0 25px;
+  }
+
+  .desktopImageBobble {
+    position: relative;
+    left: -50px;
+    top: 219px;
+
+    z-index: 1;
+  }
+
+  .faqh1 {
+    text-align: left;
+    margin-left: 25px;
+  }
+}
