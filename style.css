@@ -11,42 +11,42 @@ body {
 }
 
 .card {
-  width: 328px;
+  width: 20.5rem;
 
   display: flex;
   flex-direction: column;
 }
 
 .mobileHeaderTransparent {
-  height: 109px;
+  height: 6.8125rem;
 }
 
 .headerImage {
   position: relative;
-  width: 240px;
-  top: -110px;
-  margin-left: 47px;
+  width: 15rem;
+  top: -6.875rem;
+  margin-left: 2.9375rem;
 }
 
 .headerImageShadow {
   position: relative;
-  width: 240px;
-  top: 109px;
-  margin-left: 47px;
+  width: 15rem;
+  top: 6.8125rem;
+  margin-left: 2.9375rem;
 }
 
 .spacer {
-  height: 139px;
+  height: 8.6875rem;
 }
 
 .faqBody {
   background-color: #fff;
-  border-radius: 25px;
-  padding-bottom: 48px;
+  border-radius: 1.5625rem;
+  padding-bottom: 3rem;
 }
 
 .faqHolder {
-  margin: 0 25px;
+  margin: 0 1.5625rem;
 }
 
 .faqh1 {
@@ -57,7 +57,7 @@ body {
   height: 0;
   overflow: hidden;
   color: hsl(240, 6%, 50%);
-  font-size: 14px;
+  font-size: 0.875rem;
   /* animation: expand 1s forwards; */
   animation-play-state: paused;
   animation-name: expand;
@@ -76,8 +76,8 @@ body {
 
 .question {
   color: hsl(237, 12%, 33%);
-  line-height: 50px;
-  font-size: 14px;
+  line-height: 3.125rem;
+  font-size: 0.875rem;
 }
 
 .arrowIcon {
@@ -89,7 +89,7 @@ body {
 
 .desktopFaqGraphics {
   display: none;
-  width: 500px;
+  width: 31.25rem;
 }
 
 .desktopBackgroundGraphic {
@@ -102,20 +102,20 @@ body {
 
 hr {
   margin: 0;
-  height: 1px;
+  height: 0.0625rem;
   border: none;
   background-color: hsl(240, 6%, 50%);
 }
 
 h1 {
-  margin: 0 0 20px 0;
+  margin: 0 0 1.25rem 0;
 }
 @keyframes expand {
   0% {
     height: 0;
   }
   100% {
-    height: 75px;
+    height: 4.6875rem;
   }
 }
 
@@ -128,15 +128,15 @@ h1 {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 62.5rem) {
   .card {
     flex-direction: row;
-    width: 965px;
-    min-height: 510px;
+    width: 60.3125rem;
+    min-height: 31.875rem;
   }
 
   .spacer {
-    height: 72px;
+    height: 4.5rem;
   }
 
   .mobileHeaderTransparent {
@@ -157,40 +157,40 @@ h1 {
 
   .desktopFaqGraphics {
     display: block;
-    height: 510px;
-    width: 450px;
+    height: 31.875rem;
+    width: 28.125rem;
   }
 
   .desktopImage {
     position: relative;
-    top: -868px;
-    left: -80px;
+    top: -54.25rem;
+    left: -5rem;
   }
 
   .desktopBackgroundGraphic {
     position: relative;
-    left: -573px;
-    top: -290px;
+    left: -35.8125rem;
+    top: -18.125rem;
   }
 
   .desktopSpacerTransparent {
-    width: 45px;
+    width: 2.8125rem;
     display: block;
   }
   .faqHolder {
-    margin: 0 90px 0 25px;
+    margin: 0 5.625rem 0 1.5625rem;
   }
 
   .desktopImageBobble {
     position: relative;
-    left: -50px;
-    top: 219px;
+    left: -3.125rem;
+    top: 13.6875rem;
 
     z-index: 1;
   }
 
   .faqh1 {
     text-align: left;
-    margin-left: 25px;
+    margin-left: 1.5625rem;
   }
 }
